@@ -341,13 +341,48 @@ hr {
   background-color: var(--primary);
   border-radius: 10px;
 }
-.expCont {
-  height: 100vh;
-  background-color: #111;
+.expOuterCont {
+  padding: var(--spacing1) 0;
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-columns: 3fr 1fr 6fr;
 }
-.exp {
-  height: 50vh;
-  background-color: aqua;
+.expCont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.expCont3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  position: relative;
+}
+.divCirle1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 8px 0 0 0;
+  position: relative;
+}
+.divCirle1 i {
+  font-size: 8px;
+  color: var(--primary);
+  z-index: 2;
+}
+
+.expCont3:before {
+  content: "";
+  width: 2px;
+  height: 88%;
+  background: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: -8.5%;
+  z-index: 1;
 }
 
 /* --media Query */

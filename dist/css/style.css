@@ -343,7 +343,11 @@ hr {
 }
 .expCont {
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #111;
+}
+.exp {
+  height: 50vh;
+  background-color: aqua;
 }
 
 /* --media Query */

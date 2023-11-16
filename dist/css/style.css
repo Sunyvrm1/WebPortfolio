@@ -62,6 +62,12 @@ h2 {
   color: var(--secondary);
   line-height: 1.8em;
 }
+.para6 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 10px;
+}
 
 .btn1 {
   background-color: var(--primary);
@@ -397,13 +403,13 @@ hr {
 .projectOuterCont{
   padding: var(--spacing1) 0;
   display: grid;
-  gap: 15px;
+  gap: 2em;
   grid-template-columns: repeat(3, 1fr);
 }
 .projectCont{
   display: flex;
   flex-direction: column;
-  gap: 15px
+  gap: 2em;
 }
 .proInnCont{
   position: relative;
@@ -432,8 +438,74 @@ hr {
 }
 .overlayCont p{
   color: #fff;
+  font-size: 18px;
   font-weight: 500;
 }
+
+
+/* --Contact section */
+
+.contactCont{
+  padding: var(--spacing1) 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input, textarea{
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  color: var(--heading);
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.oneLine{
+  display: flex;
+  gap: 15px;
+}
+input[type="submit"]{
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+input[type="submit"]:hover{
+  background-color: var(--secondary);
+}
+.detailCont{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detailSocialCont{
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+}
+.detailSocialCont i{
+  color: var(--heading);
+  font-size: 20px;
+  cursor: pointer;
+}
+.detailSocialCont i:hover{
+  color: var(--primary);
+}
+
+
+
+
+
+
 
 
 

@@ -18,12 +18,15 @@
   --heading: #1c1c1c;
   --spacing1: 60px;
 }
+html {
+  scroll-behavior: smooth;
+}
 .width80 {
   width: 75%;
   margin: 0 auto;
 }
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: var(--white);
   line-height: 1.2em;
 }
@@ -38,6 +41,13 @@ h2 {
   font-size: 16px;
   color: var(--para);
   line-height: 1.8em;
+}
+.para1 a {
+  color: var(--para);
+  /* text-decoration: none; */
+}
+.para1 a:hover {
+  color: var(--primary);
 }
 .para3 {
   font-size: 16px;
@@ -108,6 +118,10 @@ header {
   color: var(--primary);
   font-weight: 500;
 }
+.logo a {
+  color: var(--primary);
+  text-decoration: none;
+}
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -142,10 +156,13 @@ header {
   cursor: pointer;
 }
 
+.spaceCont {
+  height: 80px;
+}
+
 /* --banner section */
 
 .bannerCont {
-  margin-top: 80px;
   background-image: url(/dist/images/banner.jpg),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
@@ -505,7 +522,7 @@ input[type="submit"]:hover {
 
 /* --media Query */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .width80 {
     width: 95%;
   }
@@ -546,5 +563,11 @@ input[type="submit"]:hover {
   }
   .active .navIcon .navIconMenu[name="menu-outline"] {
     display: none;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 801px) {
+  .width80 {
+    width: 90%;
   }
 }

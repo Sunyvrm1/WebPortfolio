@@ -86,16 +86,12 @@ h2 {
 
 header {
   padding: 10px 0;
-  width: 100%;
-  background-color: white;
-}
-.shrink {
   position: fixed;
   top: 0;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  z-index: 99;
   width: 100%;
   background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  z-index: 99;
 }
 .headerCont {
   display: grid;
@@ -149,6 +145,7 @@ header {
 /* --banner section */
 
 .bannerCont {
+  margin-top: 80px;
   background-image: url(/dist/images/banner.jpg),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;

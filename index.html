@@ -16,12 +16,12 @@
         </div>
         <div class="nav">
           <ul>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">EDUCATION</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">EXPERIENCE</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#skill">SKILLS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
         <div class="navIcon">
@@ -35,7 +35,7 @@
 
     <!-- banner starts -->
 
-    <div class="bannerCont">
+    <div class="bannerCont" id="home">
       <div class="banner">
         <h1>HI<span>, </span>I AM <br />SUSHIL VERMA<span>.</span></h1>
         <p>WEB DESIGNER</p>
@@ -47,7 +47,7 @@
 
     <!-- about starts -->
 
-    <div class="aboutOuterCont">
+    <div class="aboutOuterCont" id="about">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>About me</h2>
@@ -96,7 +96,7 @@
 
     <!-- Education starts -->
 
-    <div class="eduOuterCont">
+    <div class="eduOuterCont" id="education">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>Education</h2>
@@ -175,7 +175,7 @@
 
     <!-- Skills starts -->
 
-    <div class="aboutOuterCont">
+    <div class="aboutOuterCont" id="skill">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>SKILLS</h2>
@@ -335,7 +335,7 @@
 
     <!-- experience starts -->
 
-    <div class="eduOuterCont">
+    <div class="eduOuterCont" id="experience">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>EXPERIENCE</h2>
@@ -373,7 +373,7 @@
 
     <!-- project starts -->
 
-    <div class="aboutOuterCont">
+    <div class="aboutOuterCont" id="project">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>PROJECTS</h2>
@@ -381,13 +381,13 @@
         <div class="projectOuterCont">
           <div class="projectCont">
             <div class="proInnCont">
-              <img src="./dist/images/project.jpg" alt="">
+              <img src="./dist/images/project.jpg" alt="" />
               <div class="overlayCont">
                 <p>MULTI-STEP FORM</p>
               </div>
             </div>
             <div class="proInnCont">
-              <img src="./dist/images/project1.jpg" alt="">
+              <img src="./dist/images/project1.jpg" alt="" />
               <div class="overlayCont">
                 <p>AGE CALCULATOR</p>
               </div>
@@ -395,13 +395,13 @@
           </div>
           <div class="projectCont">
             <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="">
+              <img src="./dist/images/project2.jpg" alt="" />
               <div class="overlayCont">
                 <p>CARD DETAILS FORM</p>
               </div>
             </div>
             <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="">
+              <img src="./dist/images/project2.jpg" alt="" />
               <div class="overlayCont">
                 <p>CARD DETAILS FORM</p>
               </div>
@@ -409,18 +409,18 @@
           </div>
           <div class="projectCont">
             <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="">
+              <img src="./dist/images/project2.jpg" alt="" />
               <div class="overlayCont">
                 <p>CARD DETAILS FORM</p>
               </div>
             </div>
             <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="">
+              <img src="./dist/images/project2.jpg" alt="" />
               <div class="overlayCont">
                 <p>CARD DETAILS FORM</p>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -429,7 +429,7 @@
 
     <!-- contact starts -->
 
-    <div class="eduOuterCont">
+    <div class="eduOuterCont" id="contact">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>CONTACT</h2>
@@ -438,12 +438,17 @@
           <div class="contactFormCont">
             <form action="">
               <div class="oneLine">
-                <input type="text" id="name" placeholder="Name*" required>
-                <input type="email" id="email" placeholder="Email*" required>
+                <input type="text" id="name" placeholder="Name*" required />
+                <input type="email" id="email" placeholder="Email*" required />
               </div>
-              <input type="text" id="subject" placeholder="Subject">
-              <textarea id="message" cols="30" rows="5" placeholder="Message"></textarea>
-              <input type="submit" value="Submit">
+              <input type="text" id="subject" placeholder="Subject" />
+              <textarea
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <input type="submit" value="Submit" />
             </form>
           </div>
           <div class="contactDetailCont">
@@ -467,6 +472,15 @@
 
     <!-- contact ends -->
 
+    <!-- Copyright starts -->
+
+    <div class="aboutOuterCont">
+      <div class="copyCont width80">
+        <p class="para1">© Copyright. Design And Developed By Sushil Verma</p>
+      </div>
+    </div>
+
+    <!-- Copyright ends -->
 
     <script src="dist/js/script.js"></script>
     <script

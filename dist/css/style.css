@@ -313,10 +313,14 @@ hr {
   border-radius: 10px;
 }
 .accSkill1 {
-  width: 80%;
+  width: 0;
+  transition: width 1.5s 5s ease;
   height: 8px;
   background-color: var(--primary);
   border-radius: 10px;
+}
+.skill-animation .accSkill1 {
+  width: 80%;
 }
 .accSkill2 {
   width: 90%;

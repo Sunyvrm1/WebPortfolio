@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- header starts -->
@@ -109,13 +110,14 @@
           </div>
         </div>
       </div>
+      <div id="education">fg</div>
     </div>
 
     <!-- about ends -->
 
     <!-- Education starts -->
 
-    <div class="eduOuterCont" id="education">
+    <div class="eduOuterCont">
       <div class="aboutCont width80">
         <div class="aboutContent">
           <h2>Education</h2>
@@ -209,7 +211,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill1"></div>
+                    <div class="accSkill1" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -225,7 +227,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill2"></div>
+                    <div class="accSkill2" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -241,7 +243,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill3"></div>
+                    <div class="accSkill3" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -257,7 +259,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill4"></div>
+                    <div class="accSkill4" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -273,7 +275,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill5"></div>
+                    <div class="accSkill5" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -289,7 +291,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill6"></div>
+                    <div class="accSkill6" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -305,7 +307,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill7"></div>
+                    <div class="accSkill7" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -321,7 +323,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill8"></div>
+                    <div class="accSkill8" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -337,7 +339,7 @@
               <div class="skillBarCont">
                 <div class="skillBar">
                   <div class="totalSkill">
-                    <div class="accSkill9"></div>
+                    <div class="accSkill9" data-aos="slide-right"></div>
                   </div>
                 </div>
                 <div class="skillBarText">
@@ -526,5 +528,15 @@
       src="https://kit.fontawesome.com/9ba24a9f81.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "linear",
+        once: true,
+      });
+    </script>
   </body>
 </html>

@@ -192,6 +192,9 @@ h1 span {
 .aboutContent {
   padding: var(--spacing1) 20px;
 }
+.aboutOuterCont {
+  padding-bottom: var(--spacing1);
+}
 .aboutContent {
   border-bottom: 1px solid var(--line);
 }
@@ -199,7 +202,7 @@ h1 span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing1);
-  padding: var(--spacing1) 0;
+  padding: var(--spacing1) 0 0 0;
 }
 .aboutText {
   display: flex;
@@ -311,16 +314,14 @@ hr {
   height: 8px;
   background-color: #e5e5e5;
   border-radius: 10px;
+  overflow: hidden;
 }
 .accSkill1 {
-  width: 0;
-  transition: width 1.5s 5s ease;
+  width: 80%;
+  transition: width 1.5s ease;
   height: 8px;
   background-color: var(--primary);
   border-radius: 10px;
-}
-.skill-animation .accSkill1 {
-  width: 80%;
 }
 .accSkill2 {
   width: 90%;
@@ -573,5 +574,14 @@ input[type="submit"]:hover {
 @media (max-width: 1300px) and (min-width: 801px) {
   .width80 {
     width: 90%;
+  }
+  .logo p {
+    font-size: 3.2em;
+  }
+  .spaceCont {
+    height: 50px;
+  }
+  .nav ul li a {
+    font-size: 15px;
   }
 }

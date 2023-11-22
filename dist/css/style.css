@@ -607,7 +607,7 @@ input[type="submit"]:hover {
   }
   .eduCont {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 20px;
   }
   .eduText {
     width: 100%;
@@ -646,6 +646,89 @@ input[type="submit"]:hover {
   }
   .copyCont {
     padding: 20px 25px;
+  }
+  .divider {
+    display: none;
+  }
+  .eduText {
+    margin-bottom: 20px;
+  }
+}
+
+/* --education media query */
+
+@media (max-width: 900px) {
+  .eduContent1 {
+    position: relative;
+    margin-left: 20px;
+  }
+  .eduContent1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    margin-left: -20px;
+    height: 90%;
+    margin-top: 21px;
+    background-color: #0f52ba;
+  }
+  .educatText1::before {
+    content: ".";
+    position: absolute;
+    font-size: 54px;
+    width: 10px;
+    top: -15px;
+    bottom: 0;
+    margin-left: -26px;
+  }
+  .eduContent2 {
+    position: relative;
+    margin-left: 20px;
+  }
+  .eduContent2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    margin-left: -20px;
+    height: 90%;
+    margin-top: 21px;
+    background-color: #0f52ba;
+  }
+  .educatText2::before {
+    content: ".";
+    position: absolute;
+    font-size: 54px;
+    width: 10px;
+    top: -15px;
+    bottom: 0;
+    margin-left: -26px;
+  }
+  .eduContent3 {
+    position: relative;
+    margin-left: 20px;
+  }
+  .eduContent3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    margin-left: -20px;
+    height: 90%;
+    margin-top: 21px;
+    background-color: #0f52ba;
+  }
+  .educatText3::before {
+    content: ".";
+    position: absolute;
+    font-size: 60px;
+    width: 10px;
+    top: -19px;
+    bottom: 0;
+    margin-left: -26px;
   }
 }
 

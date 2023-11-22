@@ -241,6 +241,9 @@ hr {
   gap: var(--spacing1);
   justify-content: center;
 }
+.socialCont a {
+  text-decoration: none;
+}
 .socialCont i {
   height: 35px;
   width: 35px;
@@ -421,7 +424,7 @@ hr {
 /* --Projects Section  */
 
 .projectOuterCont {
-  padding: var(--spacing1) 0;
+  padding: var(--spacing1) 0 0 0;
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(3, 1fr);
@@ -529,7 +532,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 900px) {
   .width80 {
-    width: 95%;
+    width: 100%;
   }
   .navIcon {
     display: flex;
@@ -539,6 +542,9 @@ input[type="submit"]:hover {
   .headerCont {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  header {
+    padding: 10px 20px;
   }
   .nav {
     position: absolute;
@@ -590,6 +596,56 @@ input[type="submit"]:hover {
   }
   .aboutImageCont {
     width: 100%;
+  }
+  .aboutOuterCont {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .eduOuterCont {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .eduCont {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .eduText {
+    width: 100%;
+  }
+  .skillCont {
+    grid-template-columns: 1fr;
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+  .skillOuterCont {
+    padding-bottom: 0;
+  }
+  .expOuterCont {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .expCont2 {
+    display: none;
+  }
+  .projectOuterCont {
+    grid-template-columns: 1fr;
+  }
+  .overlayCont {
+    opacity: 1;
+    transition: all 0.8s;
+    transform: scale(1);
+  }
+  .contactCont {
+    padding: var(--spacing1) 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .oneLine {
+    flex-direction: column;
+  }
+  .copyCont {
+    padding: 20px 25px;
   }
 }
 

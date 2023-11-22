@@ -607,10 +607,11 @@ input[type="submit"]:hover {
   }
   .eduCont {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 0px;
   }
   .eduText {
     width: 100%;
+    margin-bottom: 20px;
   }
   .skillCont {
     grid-template-columns: 1fr;
@@ -650,9 +651,6 @@ input[type="submit"]:hover {
   .divider {
     display: none;
   }
-  .eduText {
-    margin-bottom: 20px;
-  }
 }
 
 /* --education media query */
@@ -669,9 +667,9 @@ input[type="submit"]:hover {
     left: 0;
     width: 1px;
     margin-left: -20px;
-    height: 90%;
-    margin-top: 21px;
-    background-color: #0f52ba;
+    height: 91%;
+    margin-top: 23px;
+    background-color: var(--para);
   }
   .educatText1::before {
     content: ".";
@@ -681,6 +679,7 @@ input[type="submit"]:hover {
     top: -15px;
     bottom: 0;
     margin-left: -26px;
+    color: var(--primary);
   }
   .eduContent2 {
     position: relative;
@@ -693,9 +692,9 @@ input[type="submit"]:hover {
     left: 0;
     width: 1px;
     margin-left: -20px;
-    height: 90%;
-    margin-top: 21px;
-    background-color: #0f52ba;
+    height: 91%;
+    margin-top: 23px;
+    background-color: var(--para);
   }
   .educatText2::before {
     content: ".";
@@ -705,6 +704,7 @@ input[type="submit"]:hover {
     top: -15px;
     bottom: 0;
     margin-left: -26px;
+    color: var(--primary);
   }
   .eduContent3 {
     position: relative;
@@ -717,18 +717,19 @@ input[type="submit"]:hover {
     left: 0;
     width: 1px;
     margin-left: -20px;
-    height: 90%;
-    margin-top: 21px;
-    background-color: #0f52ba;
+    height: 91%;
+    margin-top: 23px;
+    background-color: var(--para);
   }
   .educatText3::before {
     content: ".";
     position: absolute;
-    font-size: 60px;
+    font-size: 54px;
     width: 10px;
-    top: -19px;
+    top: -15px;
     bottom: 0;
     margin-left: -26px;
+    color: var(--primary);
   }
 }
 

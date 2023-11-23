@@ -524,7 +524,11 @@ input[type="submit"]:hover {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+}
+.detailCont i {
+  font-size: 30px;
+  color: var(--primary);
 }
 .detailSocialCont {
   display: flex;
@@ -549,6 +553,10 @@ input[type="submit"]:hover {
 @media (max-width: 900px) {
   .width80 {
     width: 100%;
+  }
+  .bannerCont {
+    height: 70vh;
+    background-position-x: left;
   }
   .navIcon {
     display: flex;
@@ -590,9 +598,6 @@ input[type="submit"]:hover {
   }
   .active .navIcon .navIconMenu[name="menu-outline"] {
     display: none;
-  }
-  .bannerCont {
-    height: 65vh;
   }
   h1 {
     font-size: 3em;
@@ -666,14 +671,6 @@ input[type="submit"]:hover {
   }
   .divider {
     display: none;
-  }
-}
-
-/* --education media query */
-
-@media (max-width: 900px) {
-  .bannerCont {
-    height: 75vh;
   }
   .eduContent1 {
     position: relative;

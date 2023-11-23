@@ -26,3 +26,10 @@ navIcon.addEventListener("click", () => {
 // window.addEventListener('scroll', function() {
 //   console.log(window.scrollY);
 // });
+
+// var typed = new typed(".auto-input", {
+//   Strings: ["SUSHIL VERMA", "WEB DESIGNER"],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   loop: true,
+// });

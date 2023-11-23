@@ -42,8 +42,13 @@
 
     <div class="bannerCont" id="home">
       <div class="banner">
-        <h1>HI<span>, </span>I AM <br />SUSHIL VERMA<span>.</span></h1>
-        <p>WEB DESIGNER</p>
+        <h1>
+          HI<span>, </span>I AM <br /><span class="auto-input"></span
+          ><span>.</span>
+        </h1>
+        <!-- <div class="bannerText">
+          <p>WEB DESIGNER</p>
+        </div> -->
         <button class="btn1">Download Resume</button>
       </div>
     </div>
@@ -60,16 +65,19 @@
         <div class="about">
           <div class="aboutText">
             <p class="para2">
-              I am a Professional UI/UX Designer and Web developer. Consectetur
-              an adipisi elita, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+              I'm a passionate web designer dedicated to crafting engaging,
+              user-centric digital experiences. With a blend of creativity and
+              technical expertise, I specialize in bringing visions to life
+              through intuitive, aesthetically pleasing designs. Explore my work
+              to discover how I transform ideas into captivating online
+              realities.
             </p>
             <div class="aboutText1">
               <p class="para1">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Exercitationem saepe odit sed obcaecati tempore similique
-                voluptatum, consectetur fuga debitis nihil ut beatae facilis
-                vero quae? Reiciendis deserunt expedita ab assumenda!
+                Looking for an opportunity with an organization for achievement
+                of long-term goals which empower the freedom to expand my mind
+                laterally and career vertically, thus contributing to the growth
+                of the organization and grow consequently.
               </p>
             </div>
             <div class="aboutDetail">
@@ -398,46 +406,43 @@
           <h2>PROJECTS</h2>
         </div>
         <div class="projectOuterCont">
-          <div class="projectCont">
-            <div class="proInnCont">
-              <img src="./dist/images/project.jpg" alt="" />
-              <div class="overlayCont">
-                <p>MULTI-STEP FORM</p>
-              </div>
-            </div>
-            <div class="proInnCont">
-              <img src="./dist/images/project1.jpg" alt="" />
-              <div class="overlayCont">
-                <p>AGE CALCULATOR</p>
-              </div>
+          <div class="proInnCont">
+            <img src="./dist/images/project.jpg" alt="" />
+            <div class="overlayCont">
+              <a
+                class="overlayText"
+                href="https://multi-step-form-dusky-xi.vercel.app/"
+                target="_blank"
+                >MULTI-STEP FORM</a
+              >
             </div>
           </div>
-          <div class="projectCont">
-            <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="" />
-              <div class="overlayCont">
-                <p>CARD DETAILS FORM</p>
-              </div>
-            </div>
-            <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="" />
-              <div class="overlayCont">
-                <p>CARD DETAILS FORM</p>
-              </div>
+          <div class="proInnCont">
+            <img src="./dist/images/project1.jpg" alt="" />
+            <div class="overlayCont">
+              <a
+                class="overlayText"
+                href="https://age-calculator1.vercel.app/"
+                target="_blank"
+                >AGE CALCULATOR</a
+              >
             </div>
           </div>
-          <div class="projectCont">
-            <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="" />
-              <div class="overlayCont">
-                <p>CARD DETAILS FORM</p>
-              </div>
+          <div class="proInnCont">
+            <img src="./dist/images/project2.jpg" alt="" />
+            <div class="overlayCont">
+              <a
+                class="overlayText"
+                href="https://credit-card-sunyvrm1.vercel.app"
+                target="_blank"
+                >AGE CALCULATOR</a
+              >
             </div>
-            <div class="proInnCont">
-              <img src="./dist/images/project2.jpg" alt="" />
-              <div class="overlayCont">
-                <p>CARD DETAILS FORM</p>
-              </div>
+          </div>
+          <div class="proInnCont">
+            <img src="./dist/images/project2.jpg" alt="" />
+            <div class="overlayCont">
+              <p>CARD DETAILS FORM</p>
             </div>
           </div>
         </div>
@@ -526,6 +531,7 @@
       src="https://kit.fontawesome.com/9ba24a9f81.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -534,6 +540,15 @@
         duration: 1000, // values from 0 to 3000, with step 50ms
         easing: "linear",
         once: true,
+      });
+    </script>
+
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["SUSHIL VERMA", "WEB DESIGNER"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
       });
     </script>
   </body>

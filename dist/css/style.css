@@ -166,7 +166,7 @@ header {
   background-image: url(/dist/images/banner.jpg),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
-  height: 80vh;
+  height: 70vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -177,14 +177,26 @@ header {
 h1 span {
   color: var(--primary);
 }
+.auto-input {
+  color: var(--white);
+}
 .banner {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
-.banner p {
+.bannerText {
+  display: flex;
+  justify-content: center;
+}
+.bannerText p {
   font-size: 1.5em;
   color: var(--white);
   letter-spacing: 0.1em;
   margin: 0.8em 0 1.3em 0;
+  position: relative;
 }
 
 /* --about Section */
@@ -429,11 +441,11 @@ hr {
   gap: 2em;
   grid-template-columns: repeat(3, 1fr);
 }
-.projectCont {
+/* .projectCont {
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
+} */
 .proInnCont {
   position: relative;
   display: flex;
@@ -459,10 +471,11 @@ hr {
   transition: all 0.8s;
   transform: scale(0.3);
 }
-.overlayCont p {
+.overlayText {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
+  text-decoration: none;
 }
 
 /* --Contact section */
@@ -656,6 +669,9 @@ input[type="submit"]:hover {
 /* --education media query */
 
 @media (max-width: 900px) {
+  .bannerCont {
+    height: 75vh;
+  }
   .eduContent1 {
     position: relative;
     margin-left: 20px;

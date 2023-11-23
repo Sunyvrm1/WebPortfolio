@@ -180,6 +180,9 @@ h1 span {
 .auto-input {
   color: var(--white);
 }
+.typed-cursor {
+  color: var(--white);
+}
 .banner {
   padding: 0 20px;
   display: flex;

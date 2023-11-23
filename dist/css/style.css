@@ -17,6 +17,7 @@
   --para: #6b6b6b;
   --heading: #1c1c1c;
   --spacing1: 60px;
+  --spacing2: 100px;
 }
 html {
   scroll-behavior: smooth;
@@ -203,12 +204,11 @@ h1 span {
 }
 
 /* --about Section */
-
 .aboutContent {
-  padding: var(--spacing1) 20px;
+  padding: 0 20px var(--spacing1) 20px;
 }
 .aboutOuterCont {
-  padding-bottom: var(--spacing1);
+  padding: var(--spacing1) 0;
 }
 .aboutContent {
   border-bottom: 1px solid var(--line);
@@ -277,9 +277,10 @@ hr {
 
 .eduOuterCont {
   background-color: #f2f2f2;
+  padding: var(--spacing1) 0;
 }
 .eduCont {
-  padding: var(--spacing1) 0;
+  padding: var(--spacing1) 0 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
@@ -606,7 +607,7 @@ input[type="submit"]:hover {
     font-size: 1.2em;
   }
   :root {
-    --spacing1: 40px;
+    --spacing1: 45px;
   }
   .about {
     grid-template-columns: 1fr;

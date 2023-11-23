@@ -412,12 +412,12 @@ hr {
 
 .expCont3:before {
   content: "";
-  width: 2px;
-  height: 88%;
-  background: #ccc;
+  width: 1px;
+  height: 87%;
+  background: var(--para);
   position: absolute;
   bottom: 0;
-  left: -8.5%;
+  left: -8.4%;
   z-index: 1;
 }
 

@@ -5,31 +5,26 @@ navIcon.addEventListener("click", () => {
   headerCont.classList.toggle("active");
 });
 
-// const skillSection = document.getElementById('skill');
+// navigation
 
-// function animateSkillsOnScroll() {
-//   function checkScroll() {
-//     const rect = skillSection.getBoundingClientRect();
-//     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+window.addEventListener("scroll", function () {
+  var links = document.querySelectorAll("nav ul li");
 
-//     if (rect.top < windowHeight && rect.bottom >= 0) {
-//       skillSection.classList.add('skill-animation');
-//       window.removeEventListener('scroll', checkScroll);
-//     }
-//   }
+  links.forEach(function (link) {
+    var sectionId = link.querySelector("a").getAttribute("href").substring(1);
+    var section = document.getElementById(sectionId);
+    var sectionTop = section.getBoundingClientRect().top;
+    var viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    console.log(viewportHeight);
 
-//   window.addEventListener('scroll', checkScroll);
-// }
-
-// animateSkillsOnScroll(); // Trigger the scroll animation on initial load
-
-// window.addEventListener('scroll', function() {
-//   console.log(window.scrollY);
-// });
-
-// var typed = new typed(".auto-input", {
-//   Strings: ["SUSHIL VERMA", "WEB DESIGNER"],
-//   typeSpeed: 100,
-//   backSpeed: 100,
-//   loop: true,
-// });
+    if (sectionTop < 0.5 * viewportHeight) {
+      links.forEach(function (link) {
+        if (link !== link.parentNode.parentNode.querySelector(".activeColor")) {
+          link.classList.remove("activeColor");
+        }
+      });
+      link.classList.add("activeColor");
+    }
+  });
+});

@@ -160,6 +160,9 @@ header {
 .spaceCont {
   height: 80px;
 }
+.activeColor {
+  color: var(--primary);
+}
 
 /* --banner section */
 
@@ -167,7 +170,7 @@ header {
   background-image: url(/dist/images/banner.jpg),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
-  height: 70vh;
+  height: 80vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -456,7 +459,7 @@ hr {
 }
 .proInnCont img {
   width: 100%;
-  max-height: 30vh;
+  max-height: 35vh;
   object-fit: cover;
 }
 .proInnCont:hover .overlayCont {

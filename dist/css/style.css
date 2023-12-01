@@ -160,9 +160,6 @@ header {
 .spaceCont {
   height: 80px;
 }
-.activeColor {
-  color: var(--primary);
-}
 
 /* --banner section */
 
@@ -177,6 +174,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 h1 span {
   color: var(--primary);
@@ -218,7 +216,7 @@ h1 span {
 }
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 2fr;
   gap: var(--spacing1);
   padding: var(--spacing1) 0 0 0;
 }

@@ -312,7 +312,7 @@ hr {
 /* --skills Section  */
 
 .skillOuterCont {
-  padding: var(--spacing1) 0;
+  padding: var(--spacing1) 0 0 0;
 }
 .skillText {
   text-transform: uppercase;
@@ -395,7 +395,7 @@ hr {
 /* --Experience Section  */
 
 .expOuterCont {
-  padding: var(--spacing1) 0;
+  padding: var(--spacing1) 0 0 0;
   /* background-color: #fff; */
   display: grid;
   grid-template-columns: 3fr 1fr 6fr;

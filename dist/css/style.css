@@ -11,7 +11,7 @@
 :root {
   --primary: #0f52ba;
   --secondary: #002366;
-  --secondaryOverlay: #002466bd;
+  --secondaryOverlay: #002466d7;
   --white: #fff;
   --line: #ccc;
   --para: #6b6b6b;
@@ -446,11 +446,6 @@ hr {
   gap: 2em;
   grid-template-columns: repeat(3, 1fr);
 }
-/* .projectCont {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-} */
 .proInnCont {
   position: relative;
   display: flex;
@@ -473,7 +468,7 @@ hr {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 0.5s ease-in;
   transform: scale(0.3);
 }
 .overlayText {
